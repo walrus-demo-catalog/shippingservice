@@ -52,7 +52,7 @@ variable "image_version" {
 variable "service_name" {
   type        = string
   description = "Service name"
-  default     = "shippingservice"
+  default     = "currencyservice"
 }
 
 # @hidden
