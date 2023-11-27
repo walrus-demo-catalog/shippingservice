@@ -4,6 +4,7 @@ metadata:
   name: shippingservice
   namespace: ${namespace}
 spec:
+  replicas: ${replicas}
   selector:
     matchLabels:
       app: shippingservice
@@ -12,7 +13,6 @@ spec:
       labels:
         app: shippingservice
     spec:
-      replicas: ${replicas}
       serviceAccountName: default
       securityContext:
         fsGroup: 1000
