@@ -12,6 +12,7 @@ spec:
       labels:
         app: shippingservice
     spec:
+      replicas: ${replicas}
       serviceAccountName: default
       securityContext:
         fsGroup: 1000
